@@ -1,0 +1,12 @@
+C:\Users\50494\Documents\Repositorio-GitHub\Javascript\angular\sistema-venta-csharp\SistemaVenta.BLL\bin\Debug\net7.0\SistemaVenta.BLL.deps.json
+C:\Users\50494\Documents\Repositorio-GitHub\Javascript\angular\sistema-venta-csharp\SistemaVenta.BLL\bin\Debug\net7.0\SistemaVenta.BLL.dll
+C:\Users\50494\Documents\Repositorio-GitHub\Javascript\angular\sistema-venta-csharp\SistemaVenta.BLL\bin\Debug\net7.0\SistemaVenta.BLL.pdb
+C:\Users\50494\Documents\Repositorio-GitHub\Javascript\angular\sistema-venta-csharp\SistemaVenta.BLL\obj\Debug\net7.0\SistemaVenta.BLL.csproj.AssemblyReference.cache
+C:\Users\50494\Documents\Repositorio-GitHub\Javascript\angular\sistema-venta-csharp\SistemaVenta.BLL\obj\Debug\net7.0\SistemaVenta.BLL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\50494\Documents\Repositorio-GitHub\Javascript\angular\sistema-venta-csharp\SistemaVenta.BLL\obj\Debug\net7.0\SistemaVenta.BLL.AssemblyInfoInputs.cache
+C:\Users\50494\Documents\Repositorio-GitHub\Javascript\angular\sistema-venta-csharp\SistemaVenta.BLL\obj\Debug\net7.0\SistemaVenta.BLL.AssemblyInfo.cs
+C:\Users\50494\Documents\Repositorio-GitHub\Javascript\angular\sistema-venta-csharp\SistemaVenta.BLL\obj\Debug\net7.0\SistemaVenta.BLL.csproj.CoreCompileInputs.cache
+C:\Users\50494\Documents\Repositorio-GitHub\Javascript\angular\sistema-venta-csharp\SistemaVenta.BLL\obj\Debug\net7.0\SistemaVenta.BLL.dll
+C:\Users\50494\Documents\Repositorio-GitHub\Javascript\angular\sistema-venta-csharp\SistemaVenta.BLL\obj\Debug\net7.0\refint\SistemaVenta.BLL.dll
+C:\Users\50494\Documents\Repositorio-GitHub\Javascript\angular\sistema-venta-csharp\SistemaVenta.BLL\obj\Debug\net7.0\SistemaVenta.BLL.pdb
+C:\Users\50494\Documents\Repositorio-GitHub\Javascript\angular\sistema-venta-csharp\SistemaVenta.BLL\obj\Debug\net7.0\ref\SistemaVenta.BLL.dll

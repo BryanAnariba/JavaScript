@@ -1,0 +1,14 @@
+C:\Users\50494\Documents\Repositorio-GitHub\Javascript\angular\sistema-venta-csharp\SistemaVenta.Entity\bin\Debug\net7.0\SistemaVenta.Entity.deps.json
+C:\Users\50494\Documents\Repositorio-GitHub\Javascript\angular\sistema-venta-csharp\SistemaVenta.Entity\bin\Debug\net7.0\SistemaVenta.Entity.runtimeconfig.json
+C:\Users\50494\Documents\Repositorio-GitHub\Javascript\angular\sistema-venta-csharp\SistemaVenta.Entity\bin\Debug\net7.0\SistemaVenta.Entity.dll
+C:\Users\50494\Documents\Repositorio-GitHub\Javascript\angular\sistema-venta-csharp\SistemaVenta.Entity\bin\Debug\net7.0\SistemaVenta.Entity.pdb
+C:\Users\50494\Documents\Repositorio-GitHub\Javascript\angular\sistema-venta-csharp\SistemaVenta.Entity\obj\Debug\net7.0\SistemaVenta.Entity.csproj.AssemblyReference.cache
+C:\Users\50494\Documents\Repositorio-GitHub\Javascript\angular\sistema-venta-csharp\SistemaVenta.Entity\obj\Debug\net7.0\SistemaVenta.Entity.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\50494\Documents\Repositorio-GitHub\Javascript\angular\sistema-venta-csharp\SistemaVenta.Entity\obj\Debug\net7.0\SistemaVenta.Entity.AssemblyInfoInputs.cache
+C:\Users\50494\Documents\Repositorio-GitHub\Javascript\angular\sistema-venta-csharp\SistemaVenta.Entity\obj\Debug\net7.0\SistemaVenta.Entity.AssemblyInfo.cs
+C:\Users\50494\Documents\Repositorio-GitHub\Javascript\angular\sistema-venta-csharp\SistemaVenta.Entity\obj\Debug\net7.0\SistemaVenta.Entity.csproj.CoreCompileInputs.cache
+C:\Users\50494\Documents\Repositorio-GitHub\Javascript\angular\sistema-venta-csharp\SistemaVenta.Entity\obj\Debug\net7.0\SistemaVenta.Entity.dll
+C:\Users\50494\Documents\Repositorio-GitHub\Javascript\angular\sistema-venta-csharp\SistemaVenta.Entity\obj\Debug\net7.0\refint\SistemaVenta.Entity.dll
+C:\Users\50494\Documents\Repositorio-GitHub\Javascript\angular\sistema-venta-csharp\SistemaVenta.Entity\obj\Debug\net7.0\SistemaVenta.Entity.pdb
+C:\Users\50494\Documents\Repositorio-GitHub\Javascript\angular\sistema-venta-csharp\SistemaVenta.Entity\obj\Debug\net7.0\SistemaVenta.Entity.genruntimeconfig.cache
+C:\Users\50494\Documents\Repositorio-GitHub\Javascript\angular\sistema-venta-csharp\SistemaVenta.Entity\obj\Debug\net7.0\ref\SistemaVenta.Entity.dll

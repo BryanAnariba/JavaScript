@@ -1,0 +1,113 @@
+:root {
+    --primary: #bc4123;
+    --secondary: #2b3452;
+}
+
+.btn-background-primary {
+    background-color: #bc4123;
+}
+.btn-background-primary:hover {
+    background-color: #2b3452;
+}
+
+.fondo-dark {
+    background-color: var(--secondary);
+}
+
+body {
+    margin: 0;
+    padding: 20px;
+    background: #4B79A1;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #283E51, #4B79A1);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #283E51, #4B79A1); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+}
+
+* {
+    color: #fff;
+    margin: 0;
+}
+
+p {
+    margin: 20px 0;
+}
+
+button {
+    border: 0;
+    padding: 0px;
+    color: white;
+    background: var(--primary);
+    cursor: pointer;
+}
+
+header nav {
+    display: flex;
+    gap: 16px;
+    justify-content: end;
+    max-width: 1200px;
+    margin: 0px auto;
+}
+
+header nav h1 {
+    margin-right: auto;
+    border-bottom: 3px solid var(--primary);
+}
+
+header nav a {
+    text-decoration: none;
+    padding: 6px;
+    border-radius: 4px;
+    color: #fff;
+    margin-top: auto;
+}
+
+header nav a.active {
+    background-color: var(--primary);
+}
+
+.help-layout nav {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.help-layout nav a {
+    padding: 10px;
+    border: 2px solid white;
+    border-radius: 4px;
+    text-decoration: none;
+    color: white;
+}
+
+.help-layout nav a:hover {
+    border-color: var(--primary);
+}
+
+.help-layout nav a.active {
+    background: var(--primary);
+}
+
+.faq .question {
+    background: rgba( 0,0,0,0.2 );
+    padding: 5px 20px;
+    border-radius: 4px;
+    margin: 20px 0;
+}
+
+header nav h1 {
+    display: block;
+    white-space: nowrap;
+    border-right: 2px solid;
+    width: 8ch;
+
+    animation: typing 2s steps(8), blink 0.5s infinite step-end alternate;
+    overflow: hidden;
+}
+
+@keyframes typing {
+    from { width: 0; }
+}
+
+@keyframes blink {
+    50% { border-color: transparent; }
+}

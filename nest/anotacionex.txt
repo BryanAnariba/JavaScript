@@ -1,0 +1,5 @@
+Como crear un proyecto con nest js
+    nest new nombre-proyecto
+
+Ejecutar la aplicacion
+    npm run start:dev

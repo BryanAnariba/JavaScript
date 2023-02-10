@@ -1,0 +1,5 @@
+# Modulos de node
+./node_modules
+
+# Archivos txt generados con la aplicacion
+./uploads/*.txt

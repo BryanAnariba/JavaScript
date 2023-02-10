@@ -1,0 +1,1 @@
+Proyecto con typescript puro y duro

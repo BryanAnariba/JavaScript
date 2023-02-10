@@ -1,0 +1,2 @@
+Se me ocurre que aqui puede ir todo proyecto nativo con javascript, si aun acaso uso node
+si el proyecto se llama rest-server-empleados aqui el frontend se llamara web-server-empleados
