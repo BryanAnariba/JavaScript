@@ -37,7 +37,7 @@ class Server {
         try {
             await this.app.listen( this.app.get( `PORT` ) );
             const conn = await getConnection();
-            50
+            1h
             console.log( `========================================================================`.red );
             console.log( `Node Server Started on Port: http://localhost:${ this.app.get( 'PORT' ) }`.cyan );
             console.log( `Mongo Server Started on Port: ${ conn.connection.host }`.cyan );
