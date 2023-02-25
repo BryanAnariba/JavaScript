@@ -2,6 +2,8 @@ require( 'dotenv/config' );
 require( 'colors' );
 const express = require( 'express' );
 const cors = require( 'cors' );
+const { connectMe } = require( './config/dbConnection' );
+const indexRoutes = require( './routes/index' );
 
 class Server {
 
@@ -24,7 +26,7 @@ class Server {
     }
 
     routes () {
-        //https://www.youtube.com/watch?v=w93dzOToqw4&list=PL0g02APOH8olUaSJUReizC6KQXTrGYNU6&index=3
+        this.app.use( '/api', indexRoutes );
     }
 
     staticFiles () {
@@ -32,11 +34,26 @@ class Server {
     }
 
     async start () {
+        // Promise.all([
+        //     this.app.listen( this.app.get( 'PORT' )),
+        //     connectMe(),
+        // ])
+        // .then(( results ) => {
+        //     console.log( results )  
+        //     console.log( '============================'.magenta );
+        //     console.log( `Server started on port: ${ this.app.get( 'PORT' ) }`.cyan );
+        //     console.log( '============================'.magenta );
+        // })
+        // .catch((error) => {
+        //     console.log(error)
+        //})
+
         await this.app.listen( this.app.get( 'PORT' ));
-        console.clear();
-        console.log( '============================'.magenta );
+        const connectionResult = await connectMe();
+        console.log( '================================================================='.magenta );
         console.log( `Server started on port: ${ this.app.get( 'PORT' ) }`.cyan );
-        console.log( '============================'.magenta );
+        console.log( `Mongo started on port: ${ connectionResult.connection.host}`.cyan );
+        console.log( '================================================================='.magenta );
     }
 
 }

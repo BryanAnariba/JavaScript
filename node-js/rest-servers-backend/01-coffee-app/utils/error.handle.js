@@ -1,10 +1,10 @@
 const { response } = require("express");
 
-const errorHandle = ( res = response, statusCode, error, errorMessage ) => {
+const errorHandle = ( res = response, statusCode, errors, errorMessage ) => {
     return res.status( statusCode ).json({
         statusCode: statusCode,
         data: {
-            error: error,
+            errors: errors,
             errorMessage: errorMessage
         }
     });
