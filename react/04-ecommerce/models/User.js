@@ -1,4 +1,4 @@
-const { Schema, model } = require( 'mongoose' );
+const { model, Schema } = require( 'mongoose' );
 
 const userEntity = new Schema({
     firstName: {
@@ -11,16 +11,28 @@ const userEntity = new Schema({
     },
     email: {
         type: String,
-        required: [ true, 'Email is required' ],
+        required: [ true, 'email Name is required' ],
         unique: true
+    },
+    mobile: {
+        type: String,
+        required: [ true, 'mobile Name is required' ],  
     },
     password: {
         type: String,
-        required: [ true, 'Password is required' ]
+        required: [ true, 'Last Name is required' ]
+    },
+    role: {
+        type: String,
+        default: 'USER',
+    },
+    userStatus: {
+        type: Boolean,
+        default: true
     }
-},{
+}, {
     timestamps: true,
     versionKey: false
 });
 
-module.exports = model( 'Users', userEntity );
+module.exports = model( 'User', userEntity );

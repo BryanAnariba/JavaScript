@@ -1,10 +1,11 @@
 const mongoose = require( 'mongoose' );
-mongoose.set( 'strictQuery', false );
 
-const connectMe = async () => {
-    return await mongoose.connect( `${ process.env.CONNECTION }` );
+
+
+const connectToDB = async () => {
+    return await mongoose.connect( `${ process.env.MONGO_URI }` );
 }
 
 module.exports = {
-    connectMe,
+    connectToDB,
 }

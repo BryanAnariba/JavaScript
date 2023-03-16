@@ -1,5 +1,5 @@
-const User = require( './User' );
+const userEntity = require( './User' );
 
 module.exports = {
-    UserModel: User,
+    User: userEntity,
 }
