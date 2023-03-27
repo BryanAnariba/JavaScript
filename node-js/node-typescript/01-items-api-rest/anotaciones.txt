@@ -1,0 +1,15 @@
+npm install -g typescript
+npm install ts-node -g
+npm install nodemon -g
+
+Iniciando Proyecto
+tsc --init
+npm init -y
+
+Dependencias
+npm install express cors mongoose bcryptjs jsonwebtoken dotenv multer --save
+
+Dev Dependencias
+npm install @types/express @types/cors @types/mongoose @types/bcryptjs @types/jsonwebtoken @types/dotenv @types/multer --save-dev
+
+https://www.youtube.com/watch?v=v7CMolbDVIk&list=PLIygiKpYTC_6_CGfKc2RlyHO9J442HI_z
