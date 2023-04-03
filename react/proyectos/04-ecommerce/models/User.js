@@ -1,4 +1,4 @@
-const { model, Schema, ObjectId } = require( 'mongoose' );
+const { model, Schema } = require( 'mongoose' );
 
 const userEntity = new Schema({
     firstName: {
@@ -35,11 +35,14 @@ const userEntity = new Schema({
         default: []
     },
     address: [
-        { type: ObjectId, ref: "Address" }
+        { type: Schema.Types.ObjectId, ref: "Address" }
     ],
     wishlist: [
-        { type: ObjectId, ref: "Product" }
-    ]
+        { type: Schema.Types.ObjectId, ref: "Product" }
+    ],
+    refreshToken: {
+        type: String,
+    }
 }, {
     timestamps: true,
     versionKey: false

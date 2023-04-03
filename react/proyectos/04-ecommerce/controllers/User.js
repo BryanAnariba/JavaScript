@@ -1,8 +1,9 @@
 const { request, response } = require("express");
-const { findUserByEmail, createUser, findUsers, findUser, editUserStatus, editUser } = require("../services/user.service");
+const { findUserByEmail, createUser, findUsers, findUser, editUserStatus, editUser, refreshUserToken } = require("../services/user.service");
 const { encryptPassword, verifyPassword } = require("../utils/bcryptHandle");
 const { errorHandle } = require("../utils/errorHandle");
 const { createToken } = require("../utils/jwtHandle");
+const { generateRefreshToken } = require("../middlewares/refreshToken");
 
 const signUp = async ( req = request, res = response ) => {
     try {
@@ -58,6 +59,15 @@ const signIn = async ( req = request, res = response ) => {
             throw new Error( `Incorrect password` );
         }
 
+        if ( !existEmail.userStatus ) {
+            throw new Error( `The user ${ existEmail.email } is not active, please contact the systems administrator` );
+        }
+
+        // TODO: supongo que esto actuara cuando el token expire, tomando en cuenta el token almacenado en la base de datos este token tiene 4 horas de duracion a diferencia del primero que solo tiene 1 Hora
+        const refreshToken = await  generateRefreshToken( existEmail );
+        const refreshedToken = await refreshUserToken( existEmail, refreshToken );
+        res.cookie( 'refreshToken', refreshToken, { httpOnly: true, maxAge: 72 * 60 * 60 * 1000 } );
+
         existEmail.set( 'password', undefined, { strict: false } );
         return res.status( 200 ).json({
             statusCode: 200,
@@ -112,9 +122,9 @@ const deleteUser = async ( req = request, res = response ) => {
 
 const updateUser = async ( req = request, res = response ) => {
     try {
-        const { userId } = req.params;
+        const { uid } = req.loggedUser;
         const { firstName, lastName, mobile } = req.body;
-        const userResponse = await editUser( userId, firstName, lastName, mobile );
+        const userResponse = await editUser( uid, firstName, lastName, mobile );
         return res.status( 200 ).json({
             statusCode: 200,
             data: userResponse

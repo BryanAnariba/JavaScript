@@ -34,6 +34,19 @@ const editUser = async ( userId, firstName, lastName, mobile ) => {
     );
 }
 
+const refreshUserToken = async ( userData, refreshToken ) => {
+    return await User.findByIdAndUpdate(
+        { _id: userData._id },
+        { refreshToken: refreshToken },
+        { new: true }
+    )
+
+}
+
+const findUserByToken = async ( refreshToken ) => {
+    return await User.findOne({ refreshToken: refreshToken });
+}
+
 module.exports = {
     createUser,
     findUserByEmail,
@@ -41,4 +54,6 @@ module.exports = {
     findUser,
     editUserStatus,
     editUser,
+    refreshUserToken,
+    findUserByToken,
 }

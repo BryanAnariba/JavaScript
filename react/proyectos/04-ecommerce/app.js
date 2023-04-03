@@ -2,6 +2,7 @@ require( 'dotenv/config' );
 require( 'colors' );
 const express = require( 'express' );
 const cors = require( 'cors' );
+const cookieParser = require( 'cookie-parser' );
 const indexRoutes = require( './routes/index' );
 const { connectToDB } = require('./config/dbConnection');
 
@@ -23,6 +24,7 @@ class Server {
         this.app.use( cors() );
         this.app.use( express.json() );
         this.app.use( express.urlencoded({ extended: true }) );
+        this.app.use( cookieParser() );
     }
 
     routes () {
